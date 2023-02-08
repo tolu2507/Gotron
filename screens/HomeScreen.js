@@ -6,9 +6,6 @@ import TravelGroup from "../components/Groups";
 import { categories, travel, travelGroup } from "../pages/data";
 
 const HomeScreen = ({ navigation }) => {
-  const handlePress = () => {
-    navigation.navigate("Details");
-  };
 
   return (
     <View className="flex-1  mt-0 flex pl-3 pr-1 bg-[rgba(246,246,246,0.88)]">
@@ -72,7 +69,13 @@ const HomeScreen = ({ navigation }) => {
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View className="ml-2 mt-3 flex-row items-center">
               {travel?.map(({ key, data }) => (
-                <Travel key={key} data={data} handlePress={handlePress} />
+                <Travel
+                  key={key}
+                  data={data}
+                  handlePress={() => {
+                    navigation.navigate("Details", { image: data });
+                  }}
+                />
               ))}
             </View>
           </ScrollView>
@@ -89,7 +92,13 @@ const HomeScreen = ({ navigation }) => {
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View className="ml-2 mt-3 flex-row items-center">
               {travelGroup?.map(({ key, data }) => (
-                <TravelGroup key={key} data={data} handlePress={handlePress} />
+                <TravelGroup
+                  key={key}
+                  data={data}
+                  handlePress={() => {
+                    navigation.navigate("Details", { image: data });
+                  }}
+                />
               ))}
             </View>
           </ScrollView>

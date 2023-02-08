@@ -28,6 +28,11 @@ export default function TabScreen() {
         },
         tabBarActiveTintColor: "#24C1D6",
         tabBarInactiveTintColor: "#AFAFAF",
+        tabBarShowLabel: false,
+        tabBarBadge: 2,
+        tabBarBadgeStyle: { backgroundColor: "#AFAFAF" },
+        tabBarStyle: { backgroundColor: "rgba(246,246,246,0.88)" },
+        // tabBarBackground:"green"
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
