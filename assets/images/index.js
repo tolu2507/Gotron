@@ -1,0 +1,14 @@
+export { default as Antelope } from "../images/ant14.png";
+export { default as Ant1 } from "../images/ant13.png";
+export { default as Ant2 } from "../images/ant12.png";
+export { default as Ant3 } from "../images/ant11.png";
+export { default as Ant4 } from "../images/ant10.png";
+export { default as Ant5 } from "../images/ant9.png";
+export { default as Ant6 } from "../images/ant8.png";
+export { default as Ant7 } from "../images/ant7.png";
+export { default as Ant8 } from "../images/ant6.png";
+export { default as Ant9 } from "../images/ant5.png";
+export { default as Ant10 } from "../images/ant4.png";
+export { default as Ant11 } from "../images/ant3.png";
+export { default as Ant12 } from "../images/ant2.png";
+export { default as Ant13 } from "../image/ant1.png";
